@@ -96,7 +96,8 @@ h1 {
   overflow-y: scroll;
   padding: 1px;
   font-size: 12px;
-  height: 50px;
+  height: 100px;
+  white-space: pre-line;
 }
 
 #message-board::-webkit-scrollbar {
