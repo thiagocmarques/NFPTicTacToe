@@ -140,11 +140,11 @@ function updateMessageBoard(){
   for (let index = messages.length - 1; index >= 0; index--){
     console.log(messages[index]);
     if (index == messages.length - 1)
-      //lines += `<p><div class="currentMsg">${messages[index]}</div></p>`;
-      msgLine = `<span class="currentMsg">${messages[index]}</span>`;
+      msgLine = `<div class="currentMsg">${messages[index]}</div>`;
+      //msgLine = `<span class="currentMsg">${messages[index]}</span>`;
     else
-      //lines += `<p><div class="oldMsg">${messages[index]}</div></p>`; 
-      hstLines += `<span class="oldMsg">${messages[index]}</span><br>`;
+      hstLines += `<div class="oldMsg">${messages[index]}</div>`; 
+      //hstLines += `<span class="oldMsg">${messages[index]}</span>`;
   }
   if (messages.length > 0)
     currentMsg.innerHTML = msgLine;
